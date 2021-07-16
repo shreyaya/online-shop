@@ -1,0 +1,29 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+
+{% include 'header.html' %}
+
+    <div class="container">{% for message in get_flashed_messages() %}
+    <div class="flashes" style="color:red; text-align:center;">
+      {{message}}
+    </div>
+    {% endfor %}
+        <div class="Login">
+            <div class="row">
+                <div class="col">
+                    <h3>LOGIN</h3>
+
+                    {{ wtf.quick_form( loginform, novalidate=True, button_map={"submit": "primary"}) }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {% include 'footer.html' %}
+
+</body>
+</html>
+
+{% endblock %}

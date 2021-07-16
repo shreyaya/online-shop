@@ -1,0 +1,94 @@
+{% include 'header.html' %}
+		<!-- //Header-Top-Bar-(Hidden) -->
+
+
+<body>
+		<!-- Header-Slider -->
+		<div class="w3slideraits">
+			<div class="fluid_dg_wrap fluid_dg_emboss pattern_1 fluid_dg_white_skin" id="fluid_dg_wrap_4">
+				<div data-thumb="{{url_for('static', filename='images/slide-1-small.jpg')}}" data-src="{{url_for('static', filename='images/slide-1.jpg')}}"></div>
+				<div data-thumb="{{url_for('static', filename='images/slide-2-small.jpg')}}" data-src="{{url_for('static', filename='images/slide-2.jpg')}}"></div>
+				<div data-thumb="{{url_for('static', filename='images/slide-3-small.jpg')}}" data-src="{{url_for('static', filename='images/slide-3.jpg')}}"></div>
+				<div data-thumb="{{url_for('static', filename='images/slide-4-small.jpg')}}" data-src="{{url_for('static', filename='images/slide-4.jpg')}}"></div>
+				<div data-thumb="{{url_for('static', filename='images/slide-5-small.jpg')}}" data-src="{{url_for('static', filename='images/slide-5.jpg')}}"></div>
+
+		<!-- //Header-Slider -->
+
+	</div>
+	<!-- //Header -->
+
+
+
+	<!-- Model-Slider -->
+	<div class="agilemodel-slider">
+		<div id='film_roll_1'>
+			<div><img src="{{url_for('static', filename='images/model_slide-1.jpg')}}" alt="Groovy Apparel"></div>
+			<div><img src="{{url_for('static', filename='images/model_slide-2.jpg')}}" alt="Groovy Apparel"></div>
+			<div><img src="{{url_for('static', filename='images/model_slide-3.jpg')}}" alt="Groovy Apparel"></div>
+			<div><img src="{{url_for('static', filename='images/model_slide-4.jpg')}}" alt="Groovy Apparel"></div>
+			<div><img src="{{url_for('static', filename='images/model_slide-5.jpg')}}" alt="Groovy Apparel"></div>
+			<div><img src="{{url_for('static', filename='images/model_slide-6.jpg')}}" alt="Groovy Apparel"></div>
+			<div><img src="{{url_for('static', filename='images/model_slide-7.jpg')}}" alt="Groovy Apparel"></div>
+			<div><img src="{{url_for('static', filename='images/model_slide-8.jpg')}}" alt="Groovy Apparel"></div>
+			<div><img src="{{url_for('static', filename='images/model_slide-9.jpg')}}" alt="Groovy Apparel"></div>
+			<div><img src="{{url_for('static', filename='images/model_slide-10.jpg')}}" alt="Groovy Apparel"></div>
+		</div>
+	</div>
+	<!-- //Model-Slider -->
+	<!-- Shopping -->
+	<div class="agileshopping">
+		<div class="container">
+
+			<div class="agileshoppinggrids">
+				<div class="col-md-6 agileshoppinggrid agileshoppinggrid1">
+					<div class="grid">
+						<figure class="effect-apollo">
+							<img src="{{url_for('static', filename='images/mens.jpg')}}" alt="Groovy Apparel">
+							<figcaption></figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="col-md-6 agileshoppinggrid agileshoppinggrid2">
+					<div class="grid">
+						<figure class="effect-apollo">
+							<img src="{{url_for('static', filename='images/womens.jpg')}}" alt="Groovy Apparel">
+							<figcaption></figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="agileshoppinggrids-bottom">
+				<h3>CHOOSE THE BEST FOR YOU</h3>
+				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.</p>
+				<div class="agileshoppinggrids-bottom-grids">
+					<div class="col-md-6 agileshoppinggrids-bottom-grid agileshoppinggrids-bottom-grid1">
+						<div class="wthreeshop-a">
+							<a href="{{url_for('cat_products', cat_id=1)}}">SHOP MEN</a>
+						</div>
+					</div>
+					<div class="col-md-6 agileshoppinggrids-bottom-grid agileshoppinggrids-bottom-grid2">
+						<div class="wthreeshop-a">
+							<a href="{{url_for('cat_products', cat_id=2)}}">SHOP WOMEN</a>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- //Shopping -->
+
+
+
+	{% include 'footer.html' %}
+
+		</div>
+</body>
+<!-- //Body -->
+
+
+
+</html>

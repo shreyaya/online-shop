@@ -1,0 +1,171 @@
+{% include 'header.html' %}
+
+
+
+	<!-- Single-Product-View -->
+	<div class="w3aitssinglewthree">
+		<div class="container">
+
+			<div class="products">
+			<div class="single-page">
+				<div class="single-page-row" id="detail-21">
+					<div class="col-md-6 single-top-left">
+						<div class="flexslider">
+							<ul class="slides">
+								<li data-thumb="images/s11.jpg">
+									<div class="thumb-image detail_images"> <img src="{{product.front_img}}" data-imagezoom="true" class="img-responsive" alt="Groovy Apparel"></div>
+								</li>
+								<li data-thumb="images/s12.jpg">
+									 <div class="thumb-image"> <img src="{{product.back_img}}" data-imagezoom="true" class="img-responsive" alt="Groovy Apparel"></div>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 single-top-right">
+						<h1 class="item_name">{{product.name}}</h1>
+						<p>This item will be delivered within 5-10 working days.</p>
+						<div class="rating">
+							<span class="starRating">
+								<input id="rating5" type="radio" name="rating" value="5">
+								<label for="rating5">5</label>
+								<input id="rating4" type="radio" name="rating" value="4" checked>
+								<label for="rating4">4</label>
+								<input id="rating3" type="radio" name="rating" value="3">
+								<label for="rating3">3</label>
+								<input id="rating2" type="radio" name="rating" value="2">
+								<label for="rating2">2</label>
+								<input id="rating1" type="radio" name="rating" value="1">
+								<label for="rating1">1</label>
+							</span>
+						</div>
+						<div class="single-price">
+							<ul>
+								<li>${{product.price}}</li>
+								<li><a href="#"><i class="fa fa-gift" aria-hidden="true"></i>Apply Coupon</a></li>
+							</ul>
+						</div>
+						<p class="single-price-text">Fusce a egestas nibh, eget ornare erat. Proin placerat, urna et consequat efficitur, sem odio blandit enim, sit amet euismod turpis est mattis lectus. Vestibulum maximus quam et quam egestas imperdiet. In dignissim auctor viverra.</p>
+						<div class="cbp-pgcontent aitssinglew3" id="mens_single">
+							<button class="btn btn-danger agileits my-cart-btn" data-id="mens_single" data-name="Black Leather Jacket" data-summary="Black Leather Jacket" data-price="67.5" data-quantity="1" data-image="images/s11.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</button>
+							<div class="clearfix"></div>
+						</div>
+
+						<div class="agilesocialwthree">
+							<h4>Share this Product</h4>
+							<ul class="social-icons">
+								<li><a href="#" class="facebook w3ls" title="Go to Our Facebook Page"><i class="fa w3ls fa-facebook-square" aria-hidden="true"></i></a></li>
+								<li><a href="#" class="twitter w3l" title="Go to Our Twitter Account"><i class="fa w3l fa-twitter-square" aria-hidden="true"></i></a></li>
+								<li><a href="#" class="googleplus w3" title="Go to Our Google Plus Account"><i class="fa w3 fa-google-plus-square" aria-hidden="true"></i></a></li>
+								<li><a href="#" class="instagram wthree" title="Go to Our Instagram Account"><i class="fa wthree fa-instagram" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+			<div class="aitsaccordionw3layouts">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title asd">
+								<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Description <span class="glyphicon glyphicon glyphicon-chevron-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+							<div class="panel-body panel_text">
+								<div class="scrollbar" id="style-2">
+									{{product.desc}}
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingTwo">
+							<h4 class="panel-title asd">
+								<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">More Colors (2) <span class="glyphicon glyphicon glyphicon-chevron-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+							<div class="accordion-image">
+								<div class="ac-img">
+									<img src="{{product.front_img}}" alt="Groovy Apparel">
+								</div>
+								<div class="ac-img">
+									<img src="{{product.back_img}}" alt="Groovy Apparel">
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingThree">
+							<h4 class="panel-title asd">
+								<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Rating & Reviews (40+) <span class="glyphicon glyphicon glyphicon-chevron-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+							<h3>"Excellent Quality & Fitting!"</h3>
+							<h4>Mathilda, Certified Buyer.</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+							<span>5 Stars</span>
+							<a href="#" class="next">Next Review &rarr;</a>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingFour">
+							<h4 class="panel-title asd">
+								<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Shipping Info <span class="glyphicon glyphicon glyphicon-chevron-down" aria-hidden="true"></span><i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>
+								</a>
+							</h4>
+						</div>
+						<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+							<h3>Shipping</h3>
+							<ul class="ship">
+								<li class="day"><i class="fa fa-calendar" aria-hidden="true"></i> 5-10 Business Days</li>
+								<li class="home"><i class="fa fa-truck" aria-hidden="true"></i> Free Home Delivery</li>
+								<li class="cod"><i class="fa fa-male" aria-hidden="true"></i> Cash On Delivery Available*</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		</div>
+	</div>
+	<!-- //Single-Product-View -->
+
+		<!-- FlexSlider-JavaScript -->
+			<script defer src="js/jquery.flexslider.js"></script>
+			<script>
+				$(window).load(function() {
+					$('.flexslider').flexslider({
+						animation: "slide",
+						controlNav: "thumbnails"
+					});
+				});
+			</script>
+		<!-- //FlexSlider-JavaScript -->
+
+		<!-- ImageZoom-JavaScript --><script src="js/imagezoom.js"></script>
+
+	<!-- //Custom-JavaScript-File-Links -->
+
+
+{% include 'footer.html' %}
+
+</body>
+<!-- //Body -->
+
+
+
+</html>
